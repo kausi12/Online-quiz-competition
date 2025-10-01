@@ -1,0 +1,29 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.quiz-container {
+    min-height: 450px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.answer-btn {
+    transition: background-color 0.3s, border-color 0.3s, transform 0.1s;
+}
+
+.answer-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+}
+
+.correct {
+    background-color: #22c55e !important; /* Tailwind green-500 */
+    border-color: #16a34a !important; /* Tailwind green-600 */
+    color: white;
+}
+
+.incorrect {
+    background-color: #ef4444 !important; /* Tailwind red-500 */
+    border-color: #dc2626 !important; /* Tailwind red-600 */
+    color: white;
+}
